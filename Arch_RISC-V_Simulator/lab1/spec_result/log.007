@@ -1,0 +1,828 @@
+
+
+
+runspec started at Sun Mar 10 17:23:23 2019
+/data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/runspec -c linux-amd64-gcc4.cfg -T all -n 3 int fp
+Identifying output formats...asc...config...html...pdf...ps...raw...
+Verbosity = 5
+Action    = validate
+Tune      = base,peak
+Ext       = gcc4-high-opt
+Size      = ref
+Machine   = default
+benchmarks= 164.gzip,175.vpr,176.gcc,181.mcf,186.crafty,197.parser,252.eon,253.perlbmk,254.gap,255.vortex,256.bzip2,300.twolf,168.wupwise,171.swim,172.mgrid,173.applu,177.mesa,178.galgel,179.art,183.equake,187.facerec,188.ammp,189.lucas,191.fma3d,200.sixtrack,301.apsi
+outputs   = raw,ASCII,HTML,config
+We will use: 164.gzip, 175.vpr, 176.gcc, 181.mcf, 186.crafty, 197.parser, 252.eon, 253.perlbmk, 254.gap, 255.vortex, 256.bzip2, 300.twolf, 168.wupwise, 171.swim, 172.mgrid, 173.applu, 177.mesa, 178.galgel, 179.art, 183.equake, 187.facerec, 188.ammp, 189.lucas, 191.fma3d, 200.sixtrack, 301.apsi
+Compiling Binaries
+  Up to date 164.gzip ref base gcc4-high-opt default
+  Up to date 175.vpr ref base gcc4-high-opt default
+  Up to date 176.gcc ref base gcc4-high-opt default
+  Up to date 181.mcf ref base gcc4-high-opt default
+  Up to date 186.crafty ref base gcc4-high-opt default
+  Up to date 197.parser ref base gcc4-high-opt default
+
+-----------------------------------
+  Building 252.eon ref base gcc4-high-opt default
+Wrote to makefile '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/252.eon/run/00000004/Makefile.spec':
+TUNE=base
+EXT=gcc4-high-opt
+
+BENCHLANG        = CXX
+BENCH_FLAGS      = -I. -DNDEBUG
+CC               = gcc
+COPTIMIZE        = -O3
+CXX              = g++
+CXXOPTIMIZE      = -O3
+CXXPORTABILITY   = -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin
+F77              = gfortran
+FC               = gfortran
+OS               = unix
+USE_VPATH        = 0
+VENDOR           = 
+VPATH_CINCLUDE   = 
+VPATH_CXXINCLUDE = 
+VPATH_F90INCLUDE = 
+VPATH_FINCLUDE   = 
+VPATH_INCLUDE    = 
+abstol           = 0.005
+action           = validate
+backup_config    = 1
+baseexe          = eon
+basepeak         = 0
+benchdir         = benchspec
+benchmark        = 252.eon
+bindir           = exe
+changedmd5       = 0
+check_md5        = 1
+command_add_redirect = 0
+commanderrfile   = speccmds.err
+commandexe       = eon_base.gcc4-high-opt
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+company_name     = XYZ Inc.
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configpath       = /data3/wushibin/Lab1-1-处理器性能评测/SPEC/config/linux-amd64-gcc4.cfg
+datadir          = data
+deletebinaries   = 0
+deletework       = 0
+difflines        = 10
+dirprot          = 511
+endian           = 12345678
+env_vars         = 0
+exemd5           = 7cbf7e1e6c23cc555cf3485fda7f103a
+exitvals         = spec_exit
+expand_notes     = 0
+ext              = gcc4-high-opt
+fast_rundir_verify = 0
+feedback         = 1
+fileprot         = 511
+help             = 0
+hw_avail         = May-2003
+hw_cpu           = AMD Opteron (TM) 150
+hw_cpu_mhz       = 2400
+hw_disk          = IDE, WD2000
+hw_fpu           = Integrated
+hw_memory        = 2 x 512 PC3200 DDR SDRAM CL2.0 (Corsair CMX512R-3200C2)
+hw_model         = Opteron (TM) 150 
+hw_ncpu          = 1
+hw_ncpuorder     = 1
+hw_ocache        = N/A
+hw_other         = None
+hw_parallel      = No
+hw_pcache        = 64KBI + 64KBD on chip
+hw_scache        = 1024KB(I+D) on chip
+hw_tcache        = N/A
+hw_vendor        = 
+ignore_errors    = 0
+ignore_sigint    = 0
+inputdir         = input
+iterations       = 3
+license_num      = 0000
+line_width       = 0
+locking          = 1
+log              = log
+log_line_width   = 0
+lognum           = 007
+mach             = default
+make             = specmake
+make_no_clobber  = 0
+makeflags        = 
+max_active_compares = 0
+max_users        = 1
+mean_anyway      = 0
+min_report_runs  = 3
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = eon
+nc               = 0
+notes0030        =   Portability:
+notes0051        =    252.eon:     CXXPORTABILITY=-DHAS_ERRLIST -DSPEC_CPU2000_LP64
+notes0080        =   Baseline C:   gcc -O3 
+notes0085        =   Baseline C++: g++ -O3
+num              = 252
+obiwan           = 
+optmd5           = c9898551fc3ad6ee98efb374a74b4041
+os_exe_ext       = 
+output           = asc
+output_format    = asc,html,config
+outputdir        = output
+path             = /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/252.eon
+prefix           = 
+rate             = 0
+rawfile          = 
+rawformat        = 0
+rebuild          = 0
+ref_tree_level   = Top level Config
+reftime          = reftime
+reltol           = 
+reportable       = 1
+resultdir        = result
+run              = all
+safe_eval        = 1
+setprocgroup     = 1
+sigint           = 2
+size             = ref
+skiptol          = 
+smarttune        = base
+specdiff         = specdiff
+specmake         = Makefile.spec
+specrun          = specinvoke
+srcalt           = 
+srcdir           = src
+subworkdir       = work
+sw_avail         = Dec-2003
+sw_compiler0000  = GNU gcc 4.0 compiler for AMD64
+sw_file          = Linux/ext3
+sw_os            = SuSE Linux 9.2 for AMD64
+sw_state         = Multi-user SuSE Run level 3
+table            = 1
+teeout           = yes
+teerunout        = yes
+test_date        = 
+tester_name      = XYZ Inc.
+top              = /data3/wushibin/Lab1-1-处理器性能评测/SPEC
+tune             = base
+uid              = 1022
+unbuffer         = 0
+use_submit_for_speed = 0
+username         = wushibin
+users            = 1
+vendor           = anon
+vendor_makefiles = 0
+verbose          = 5
+version          = 0
+workdir          = run
+worklist         = list
+  Compile for '252.eon' started at:Sun Mar 10 17:23:23 2019 (1552209803)
+Issuing make command 'specmake  clean 2> make.err | tee make.out'
+Start make command: Sun Mar 10 17:23:23 2019 (1552209803)
+Stop make command: Sun Mar 10 17:23:23 2019 (1552209803)
+Elapsed time for make command: 00:00:00 (0)
+Issuing make command 'specmake  build 2> make.err | tee make.out'
+Start make command: Sun Mar 10 17:23:23 2019 (1552209803)
+Stop make command: Sun Mar 10 17:24:32 2019 (1552209872)
+Elapsed time for make command: 00:01:09 (69)
+Output from make 'specmake  build 2> make.err | tee make.out':
+g++ -c -o ggCoverageSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggCoverageSolidTexture.cc
+g++ -c -o ggPathDielectricMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPathDielectricMaterial.cc
+g++ -c -o ggBox2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggBox2.cc
+g++ -c -o ggBox3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggBox3.cc
+g++ -c -o ggRasterSurfaceTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRasterSurfaceTexture.cc
+g++ -c -o ggJitterSample1.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggJitterSample1.cc
+g++ -c -o ggNRooksSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggNRooksSample2.cc
+g++ -c -o ggJitterSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggJitterSample2.cc
+g++ -c -o ggRGBFPixel.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRGBFPixel.cc
+g++ -c -o ggRotatingPinholeCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRotatingPinholeCamera.cc
+g++ -c -o ggRandomSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRandomSample2.cc
+g++ -c -o ggRandomSample3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRandomSample3.cc
+g++ -c -o ggSolidNoise2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSolidNoise2.cc
+g++ -c -o ggSolidNoise3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSolidNoise3.cc
+g++ -c -o ggSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSolidTexture.cc
+g++ -c -o ggOakSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggOakSolidTexture.cc
+g++ -c -o ggSpecularMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSpecularMaterial.cc
+g++ -c -o ggNA.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggNA.cc
+g++ -c -o ggMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggMaterial.cc
+g++ -c -o ggDiffuseMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggDiffuseMaterial.cc
+g++ -c -o ggDielectricMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggDielectricMaterial.cc
+g++ -c -o ggConductorMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggConductorMaterial.cc
+g++ -c -o ggEdgeDiscrepancy.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggEdgeDiscrepancy.cc
+g++ -c -o ggPolishedMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPolishedMaterial.cc
+g++ -c -o ggFrameInterpolation.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggFrameInterpolation.cc
+g++ -c -o ggQuaternion.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggQuaternion.cc
+g++ -c -o ggSpline.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSpline.cc
+g++ -c -o ggONB2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggONB2.cc
+g++ -c -o ggONB3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggONB3.cc
+g++ -c -o ggFrame2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggFrame2.cc
+g++ -c -o ggFrame3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggFrame3.cc
+g++ -c -o ggHMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHMatrix3.cc
+g++ -c -o ggSphere.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSphere.cc
+g++ -c -o ggRGBE.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRGBE.cc
+g++ -c -o ggGamma.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggGamma.cc
+g++ -c -o ggBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggBRDF.cc
+g++ -c -o ggDiffuseBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggDiffuseBRDF.cc
+g++ -c -o ggPhongBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPhongBRDF.cc
+g++ -c -o ggPolishedBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPolishedBRDF.cc
+g++ -c -o ggCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggCamera.cc
+g++ -c -o ggPinholeCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPinholeCamera.cc
+g++ -c -o ggThinLensCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggThinLensCamera.cc
+g++ -c -o ggErr.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggErr.cc
+g++ -c -o ggPixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPixelFilter.cc
+g++ -c -o ggTrianglePixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggTrianglePixelFilter.cc
+g++ -c -o ggBoxPixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggBoxPixelFilter.cc
+g++ -c -o ggFormat.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggFormat.cc
+g++ -c -o ggGeometry.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggGeometry.cc
+g++ -c -o ggHAffineMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHAffineMatrix3.cc
+g++ -c -o ggHShearMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHShearMatrix3.cc
+g++ -c -o ggHBoxMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHBoxMatrix3.cc
+g++ -c -o ggHPerspectiveMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHPerspectiveMatrix3.cc
+g++ -c -o ggHTranslationMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHTranslationMatrix3.cc
+g++ -c -o ggHRigidBodyMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHRigidBodyMatrix3.cc
+g++ -c -o ggHRotationMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHRotationMatrix3.cc
+g++ -c -o ggHScaleMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHScaleMatrix3.cc
+g++ -c -o ggHPoint3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggHPoint3.cc
+g++ -c -o ggPoint2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPoint2.cc
+g++ -c -o ggPoint3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPoint3.cc
+g++ -c -o ggOptics.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggOptics.cc
+g++ -c -o ggPlane.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPlane.cc
+g++ -c -o ggPolygon.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggPolygon.cc
+g++ -c -o ggGrayPixel_x.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggGrayPixel_x.cc
+g++ -c -o ggRGBPixel_x.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRGBPixel_x.cc
+g++ -c -o ggRay2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRay2.cc
+g++ -c -o ggRay3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggRay3.cc
+g++ -c -o ggBoardFloorSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggBoardFloorSolidTexture.cc
+g++ -c -o ggVector2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggVector2.cc
+g++ -c -o ggVector3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggVector3.cc
+g++ -c -o ggString.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggString.cc
+g++ -c -o ggFineSpectrum.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggFineSpectrum.cc
+g++ -c -o ggSpectrum.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  ggSpectrum.cc
+g++ -c -o eon.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  eon.cc
+g++ -c -o eonImageCalculator.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  eonImageCalculator.cc
+g++ -c -o mrObjectRecord.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrObjectRecord.cc
+g++ -c -o mrCoarsePixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrCoarsePixelRenderer.cc
+g++ -c -o mrIndirectPixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrIndirectPixelRenderer.cc
+g++ -c -o mrRushmeierPixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrRushmeierPixelRenderer.cc
+g++ -c -o mrBruteForcePixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrBruteForcePixelRenderer.cc
+g++ -c -o mrKajiyaPixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrKajiyaPixelRenderer.cc
+g++ -c -o mrCookPixelRenderer.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrCookPixelRenderer.cc
+g++ -c -o mrGrid.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrGrid.cc
+g++ -c -o mrScene.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrScene.cc
+g++ -c -o mrCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrCamera.cc
+g++ -c -o mrTriangle.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrTriangle.cc
+g++ -c -o mrFastTriangle.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrFastTriangle.cc
+g++ -c -o mrPolygon.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrPolygon.cc
+g++ -c -o mrXYDisk.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXYDisk.cc
+g++ -c -o mrXZDisk.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXZDisk.cc
+g++ -c -o mrYZDisk.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrYZDisk.cc
+g++ -c -o mrPhongAreaXYRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrPhongAreaXYRectangleLuminaire.cc
+g++ -c -o mrPhongAreaXZRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrPhongAreaXZRectangleLuminaire.cc
+g++ -c -o mrPhongAreaYZRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrPhongAreaYZRectangleLuminaire.cc
+g++ -c -o mrEmitter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrEmitter.cc
+g++ -c -o mrImposter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrImposter.cc
+g++ -c -o mrLinkedObjects.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrLinkedObjects.cc
+g++ -c -o mrBox.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrBox.cc
+g++ -c -o mrXCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXCylinder.cc
+g++ -c -o mrYCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrYCylinder.cc
+g++ -c -o mrZCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrZCylinder.cc
+g++ -c -o mrDiffuseAreaZCylinderLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaZCylinderLuminaire.cc
+g++ -c -o mrDiffuseCosineZCylinderLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseCosineZCylinderLuminaire.cc
+g++ -c -o mrDiffuseVisibleAreaZCylinderLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseVisibleAreaZCylinderLuminaire.cc
+g++ -c -o mrXEllipticalCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXEllipticalCylinder.cc
+g++ -c -o mrYEllipticalCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrYEllipticalCylinder.cc
+g++ -c -o mrZEllipticalCylinder.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrZEllipticalCylinder.cc
+g++ -c -o mrSpotAreaXYDiskLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSpotAreaXYDiskLuminaire.cc
+g++ -c -o mrDiffuseAreaXYRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaXYRectangleLuminaire.cc
+g++ -c -o mrDiffuseAreaXZRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaXZRectangleLuminaire.cc
+g++ -c -o mrDiffuseAreaYZRectangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaYZRectangleLuminaire.cc
+g++ -c -o mrSurfaceList.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSurfaceList.cc
+g++ -c -o mrDiffuseAreaTriangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaTriangleLuminaire.cc
+g++ -c -o mrDiffuseAreaSphereLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseAreaSphereLuminaire.cc
+g++ -c -o mrDiffuseCosineSphereLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseCosineSphereLuminaire.cc
+g++ -c -o mrDiffuseSolidAngleSphereLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrDiffuseSolidAngleSphereLuminaire.cc
+g++ -c -o mrShellLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrShellLuminaire.cc
+g++ -c -o mrInstance.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrInstance.cc
+g++ -c -o mrMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrMaterial.cc
+g++ -c -o mrPhongAreaTriangleLuminaire.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrPhongAreaTriangleLuminaire.cc
+g++ -c -o mrSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSolidTexture.cc
+g++ -c -o mrSphere.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSphere.cc
+g++ -c -o mrSurface.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSurface.cc
+g++ -c -o mrSurfaceTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrSurfaceTexture.cc
+g++ -c -o mrXYRectangle.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXYRectangle.cc
+g++ -c -o mrXZRectangle.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrXZRectangle.cc
+g++ -c -o mrYZRectangle.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  mrYZRectangle.cc
+g++ -c -o myrand.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3  myrand.cc
+g++       -O3  ggCoverageSolidTexture.o ggPathDielectricMaterial.o ggBox2.o ggBox3.o ggRasterSurfaceTexture.o ggJitterSample1.o ggNRooksSample2.o ggJitterSample2.o ggRGBFPixel.o ggRotatingPinholeCamera.o ggRandomSample2.o ggRandomSample3.o ggSolidNoise2.o ggSolidNoise3.o ggSolidTexture.o ggOakSolidTexture.o ggSpecularMaterial.o ggNA.o ggMaterial.o ggDiffuseMaterial.o ggDielectricMaterial.o ggConductorMaterial.o ggEdgeDiscrepancy.o ggPolishedMaterial.o ggFrameInterpolation.o ggQuaternion.o ggSpline.o ggONB2.o ggONB3.o ggFrame2.o ggFrame3.o ggHMatrix3.o ggSphere.o ggRGBE.o ggGamma.o ggBRDF.o ggDiffuseBRDF.o ggPhongBRDF.o ggPolishedBRDF.o ggCamera.o ggPinholeCamera.o ggThinLensCamera.o ggErr.o ggPixelFilter.o ggTrianglePixelFilter.o ggBoxPixelFilter.o ggFormat.o ggGeometry.o ggHAffineMatrix3.o ggHShearMatrix3.o ggHBoxMatrix3.o ggHPerspectiveMatrix3.o ggHTranslationMatrix3.o ggHRigidBodyMatrix3.o ggHRotationMatrix3.o ggHScaleMatrix3.o ggHPoint3.o ggPoint2.o ggPoint3.o ggOptics.o ggPlane.o ggPolygon.o ggGrayPixel_x.o ggRGBPixel_x.o ggRay2.o ggRay3.o ggBoardFloorSolidTexture.o ggVector2.o ggVector3.o ggString.o ggFineSpectrum.o ggSpectrum.o eon.o eonImageCalculator.o mrObjectRecord.o mrCoarsePixelRenderer.o mrIndirectPixelRenderer.o mrRushmeierPixelRenderer.o mrBruteForcePixelRenderer.o mrKajiyaPixelRenderer.o mrCookPixelRenderer.o mrGrid.o mrScene.o mrCamera.o mrTriangle.o mrFastTriangle.o mrPolygon.o mrXYDisk.o mrXZDisk.o mrYZDisk.o mrPhongAreaXYRectangleLuminaire.o mrPhongAreaXZRectangleLuminaire.o mrPhongAreaYZRectangleLuminaire.o mrEmitter.o mrImposter.o mrLinkedObjects.o mrBox.o mrXCylinder.o mrYCylinder.o mrZCylinder.o mrDiffuseAreaZCylinderLuminaire.o mrDiffuseCosineZCylinderLuminaire.o mrDiffuseVisibleAreaZCylinderLuminaire.o mrXEllipticalCylinder.o mrYEllipticalCylinder.o mrZEllipticalCylinder.o mrSpotAreaXYDiskLuminaire.o mrDiffuseAreaXYRectangleLuminaire.o mrDiffuseAreaXZRectangleLuminaire.o mrDiffuseAreaYZRectangleLuminaire.o mrSurfaceList.o mrDiffuseAreaTriangleLuminaire.o mrDiffuseAreaSphereLuminaire.o mrDiffuseCosineSphereLuminaire.o mrDiffuseSolidAngleSphereLuminaire.o mrShellLuminaire.o mrInstance.o mrMaterial.o mrPhongAreaTriangleLuminaire.o mrSolidTexture.o mrSphere.o mrSurface.o mrSurfaceTexture.o mrXYRectangle.o mrXZRectangle.o mrYZRectangle.o myrand.o     -o eon
+Error from make 'specmake  build 2> make.err | tee make.out':
+ggString.cc: In constructor 'ggString::ggString(int)':
+ggString.cc:46:30: warning: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In constructor 'ggString::ggString(const char*)':
+ggString.cc:50:30: warning: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In member function 'ggString& ggString::operator=(const char*)':
+ggString.cc:67:30: warning: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In member function 'ggString& ggString::operator=(const ggString&)':
+ggString.cc:81:30: warning: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./eonImageCalculator.h:34,
+                 from eon.cc:28:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrBruteForcePixelRenderer.h:36,
+                 from eonImageCalculator.cc:64:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrCoarsePixelRenderer.h:33,
+                 from mrCoarsePixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrCookPixelRenderer.h:36,
+                 from ./mrIndirectPixelRenderer.h:34,
+                 from mrIndirectPixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrCookPixelRenderer.h:36,
+                 from ./mrRushmeierPixelRenderer.h:34,
+                 from mrRushmeierPixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrBruteForcePixelRenderer.h:36,
+                 from mrBruteForcePixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrCookPixelRenderer.h:36,
+                 from ./mrKajiyaPixelRenderer.h:34,
+                 from mrKajiyaPixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from ./mrCookPixelRenderer.h:36,
+                 from mrCookPixelRenderer.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggAll.h:75:0,
+                 from ./mrScene.h:33,
+                 from mrScene.cc:33:
+./ggList.h:60:55: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend ostream& operator << (ostream& os, ggList<T>& l);
+                                                       ^
+./ggList.h:60:55: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+./ggList.h:61:55: warning: friend declaration 'std::istream& operator>>(std::istream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend istream& operator >> (istream& is, ggList<T>& l);
+                                                       ^
+./ggList.h:62:48: warning: friend declaration 'void operator>>(T, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+ friend void operator >> (T object, ggList<T>& l);
+                                                ^
+./ggList.h:152:56: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << (ostream&, ggListNode<T>&);
+                                                        ^
+./ggList.h:235:53: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggList<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggList<T>&);
+                                                     ^
+./ggList.h:236:57: warning: friend declaration 'std::ostream& operator<<(std::ostream&, ggListNode<T>&)' declares a non-template function [-Wnon-template-friend]
+   friend ostream& operator << ( ostream&, ggListNode<T>&);
+                                                         ^
+In file included from ./ggRaster.h:189:0,
+                 from ./ggRasterSurfaceTexture.h:42,
+                 from ./mrSurfaceTexture.h:33,
+                 from mrSurfaceTexture.cc:28:
+./ggRaster.cc: In function 'ggRaster<T>* ggConvolveWithGaussian(ggRaster<T>, double)':
+./ggRaster.cc:439:4: warning: there are no arguments to 'memset' that depend on a template parameter, so a declaration of 'memset' must be available [-fpermissive]
+    memset((char*)(&filter[imax+1]),0,sizeof(double)*(size-imax));
+    ^~~~~~
+ggErr.o: In function `ggSysErr(int, char*, char*, ...)':
+ggErr.cc:(.text+0x176): warning: `sys_errlist' is deprecated; use `strerror' or `strerror_r' instead
+ggErr.cc:(.text+0x165): warning: `sys_nerr' is deprecated; use `strerror' or `strerror_r' instead
+Issuing options command 'specmake  options 2> options.err | tee options.out'
+Start options command: Sun Mar 10 17:24:32 2019 (1552209872)
+Stop options command: Sun Mar 10 17:24:32 2019 (1552209872)
+Elapsed time for options command: 00:00:00 (0)
+Output from options 'specmake  options 2> options.err | tee options.out':
+COMP: g++ -c -o options.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64 -fpermissive -fbuiltin   -I. -DNDEBUG       -O3 
+LINK: g++       -O3       -o options
+  Compile for '252.eon' ended at:Sun Mar 10 17:24:32 2019 (1552209872)
+  Elapsed compile for '252.eon': 00:01:09 (69)
+  Up to date 253.perlbmk ref base gcc4-high-opt default
+  Up to date 254.gap ref base gcc4-high-opt default
+  Up to date 255.vortex ref base gcc4-high-opt default
+  Up to date 256.bzip2 ref base gcc4-high-opt default
+  Up to date 300.twolf ref base gcc4-high-opt default
+  Up to date 168.wupwise ref base gcc4-high-opt default
+  Up to date 171.swim ref base gcc4-high-opt default
+  Up to date 172.mgrid ref base gcc4-high-opt default
+  Up to date 173.applu ref base gcc4-high-opt default
+  Up to date 177.mesa ref base gcc4-high-opt default
+  Up to date 178.galgel ref base gcc4-high-opt default
+  Up to date 179.art ref base gcc4-high-opt default
+  Up to date 183.equake ref base gcc4-high-opt default
+  Up to date 187.facerec ref base gcc4-high-opt default
+  Up to date 188.ammp ref base gcc4-high-opt default
+  Up to date 189.lucas ref base gcc4-high-opt default
+  Up to date 191.fma3d ref base gcc4-high-opt default
+  Up to date 200.sixtrack ref base gcc4-high-opt default
+  Up to date 301.apsi ref base gcc4-high-opt default
+  Up to date 168.wupwise ref peak gcc4-high-opt default
+  Up to date 171.swim ref peak gcc4-high-opt default
+  Up to date 172.mgrid ref peak gcc4-high-opt default
+  Up to date 173.applu ref peak gcc4-high-opt default
+  Up to date 177.mesa ref peak gcc4-high-opt default
+  Up to date 178.galgel ref peak gcc4-high-opt default
+  Up to date 179.art ref peak gcc4-high-opt default
+  Up to date 183.equake ref peak gcc4-high-opt default
+  Up to date 187.facerec ref peak gcc4-high-opt default
+  Up to date 188.ammp ref peak gcc4-high-opt default
+  Up to date 189.lucas ref peak gcc4-high-opt default
+  Up to date 191.fma3d ref peak gcc4-high-opt default
+  Up to date 200.sixtrack ref peak gcc4-high-opt default
+  Up to date 301.apsi ref peak gcc4-high-opt default
+Setting Up Run Directories
+  Setting up 164.gzip ref base gcc4-high-opt default: created
+  Setting up 175.vpr ref base gcc4-high-opt default: created
+  Setting up 176.gcc ref base gcc4-high-opt default: created
+  Setting up 181.mcf ref base gcc4-high-opt default: created
+  Setting up 186.crafty ref base gcc4-high-opt default: created
+  Setting up 197.parser ref base gcc4-high-opt default: created
+  Setting up 252.eon ref base gcc4-high-opt default: created
+  Setting up 253.perlbmk ref base gcc4-high-opt default: created
+  Setting up 254.gap ref base gcc4-high-opt default: created
+  Setting up 255.vortex ref base gcc4-high-opt default: created
+  Setting up 256.bzip2 ref base gcc4-high-opt default: created
+  Setting up 300.twolf ref base gcc4-high-opt default: created
+  Setting up 168.wupwise ref base gcc4-high-opt default: created
+  Setting up 171.swim ref base gcc4-high-opt default: created
+  Setting up 172.mgrid ref base gcc4-high-opt default: created
+  Setting up 173.applu ref base gcc4-high-opt default: created
+  Setting up 177.mesa ref base gcc4-high-opt default: created
+  Setting up 178.galgel ref base gcc4-high-opt default: created
+  Setting up 179.art ref base gcc4-high-opt default: created
+  Setting up 183.equake ref base gcc4-high-opt default: created
+  Setting up 187.facerec ref base gcc4-high-opt default: created
+  Setting up 188.ammp ref base gcc4-high-opt default: created
+  Setting up 189.lucas ref base gcc4-high-opt default: created
+  Setting up 191.fma3d ref base gcc4-high-opt default: created
+  Setting up 200.sixtrack ref base gcc4-high-opt default: created
+  Setting up 301.apsi ref base gcc4-high-opt default: created
+  Setting up 164.gzip ref peak gcc4-high-opt default: created
+  Setting up 175.vpr ref peak gcc4-high-opt default: created
+  Setting up 176.gcc ref peak gcc4-high-opt default: created
+  Setting up 181.mcf ref peak gcc4-high-opt default: created
+  Setting up 186.crafty ref peak gcc4-high-opt default: created
+  Setting up 197.parser ref peak gcc4-high-opt default: created
+  Setting up 252.eon ref peak gcc4-high-opt default: created
+  Setting up 253.perlbmk ref peak gcc4-high-opt default: created
+  Setting up 254.gap ref peak gcc4-high-opt default: created
+  Setting up 255.vortex ref peak gcc4-high-opt default: created
+  Setting up 256.bzip2 ref peak gcc4-high-opt default: created
+  Setting up 300.twolf ref peak gcc4-high-opt default: created
+  Setting up 168.wupwise ref peak gcc4-high-opt default: created
+  Setting up 171.swim ref peak gcc4-high-opt default: created
+  Setting up 172.mgrid ref peak gcc4-high-opt default: created
+  Setting up 173.applu ref peak gcc4-high-opt default: created
+  Setting up 177.mesa ref peak gcc4-high-opt default: created
+  Setting up 178.galgel ref peak gcc4-high-opt default: created
+  Setting up 179.art ref peak gcc4-high-opt default: created
+  Setting up 183.equake ref peak gcc4-high-opt default: created
+  Setting up 187.facerec ref peak gcc4-high-opt default: created
+  Setting up 188.ammp ref peak gcc4-high-opt default: created
+  Setting up 189.lucas ref peak gcc4-high-opt default: created
+  Setting up 191.fma3d ref peak gcc4-high-opt default: created
+  Setting up 200.sixtrack ref peak gcc4-high-opt default: created
+  Setting up 301.apsi ref peak gcc4-high-opt default: created
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running 164.gzip ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004
+    -o input.source.out -e input.source.err ../00000004/gzip_base.gcc4-high-opt input.source 60
+    -o input.log.out -e input.log.err ../00000004/gzip_base.gcc4-high-opt input.log 60
+    -o input.graphic.out -e input.graphic.err ../00000004/gzip_base.gcc4-high-opt input.graphic 60
+    -o input.random.out -e input.random.err ../00000004/gzip_base.gcc4-high-opt input.random 60
+    -o input.program.out -e input.program.err ../00000004/gzip_base.gcc4-high-opt input.program 60
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004'
+comparing 'input.graphic.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.log.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.program.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.random.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.source.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:24:36 2019 (1552209876)
+  Stop:     Sun Mar 10 17:26:10 2019 (1552209970)
+  Elapsed:  00:01:34 (94)
+  Reported: 94 304439000 94.304439
+ Success 164.gzip ratio=1484.55, runtime=94.304439
+  Running 164.gzip ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004
+    -o input.source.out -e input.source.err ../00000004/gzip_base.gcc4-high-opt input.source 60
+    -o input.log.out -e input.log.err ../00000004/gzip_base.gcc4-high-opt input.log 60
+    -o input.graphic.out -e input.graphic.err ../00000004/gzip_base.gcc4-high-opt input.graphic 60
+    -o input.random.out -e input.random.err ../00000004/gzip_base.gcc4-high-opt input.random 60
+    -o input.program.out -e input.program.err ../00000004/gzip_base.gcc4-high-opt input.program 60
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004'
+comparing 'input.graphic.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.log.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.program.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.random.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.source.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:26:10 2019 (1552209970)
+  Stop:     Sun Mar 10 17:27:50 2019 (1552210070)
+  Elapsed:  00:01:40 (100)
+  Reported: 99 480427000 99.480427
+ Success 164.gzip ratio=1407.31, runtime=99.480427
+  Running 164.gzip ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004
+    -o input.source.out -e input.source.err ../00000004/gzip_base.gcc4-high-opt input.source 60
+    -o input.log.out -e input.log.err ../00000004/gzip_base.gcc4-high-opt input.log 60
+    -o input.graphic.out -e input.graphic.err ../00000004/gzip_base.gcc4-high-opt input.graphic 60
+    -o input.random.out -e input.random.err ../00000004/gzip_base.gcc4-high-opt input.random 60
+    -o input.program.out -e input.program.err ../00000004/gzip_base.gcc4-high-opt input.program 60
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004'
+comparing 'input.graphic.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.log.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.program.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.random.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+comparing 'input.source.out' with cw='', abstol='', reltol='',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/164.gzip/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:27:50 2019 (1552210070)
+  Stop:     Sun Mar 10 17:29:22 2019 (1552210162)
+  Elapsed:  00:01:32 (92)
+  Reported: 92 511081000 92.511081
+ Success 164.gzip ratio=1513.33, runtime=92.511081
+
+-----------------------------------
+  Running 175.vpr ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004
+    -o place_log.out -e place_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.out dum.out -nodisp -place_only -init_t 5 -exit_t 0.005 -alpha_t 0.9412 -inner_num 2
+    -o route_log.out -e route_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004'
+comparing 'costs.out' with cw='', abstol='', reltol='0.05',obiwan='',skiptol=''
+comparing 'place_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:29:23 2019 (1552210163)
+  Stop:     Sun Mar 10 17:30:24 2019 (1552210224)
+  Elapsed:  00:01:01 (61)
+  Reported: 61 535198000 61.535198
+ Success 175.vpr ratio=2275.12, runtime=61.535198
+  Running 175.vpr ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004
+    -o place_log.out -e place_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.out dum.out -nodisp -place_only -init_t 5 -exit_t 0.005 -alpha_t 0.9412 -inner_num 2
+    -o route_log.out -e route_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004'
+comparing 'costs.out' with cw='', abstol='', reltol='0.05',obiwan='',skiptol=''
+comparing 'place_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:30:25 2019 (1552210225)
+  Stop:     Sun Mar 10 17:31:26 2019 (1552210286)
+  Elapsed:  00:01:01 (61)
+  Reported: 60 293128000 60.293128
+ Success 175.vpr ratio=2321.99, runtime=60.293128
+  Running 175.vpr ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004
+    -o place_log.out -e place_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.out dum.out -nodisp -place_only -init_t 5 -exit_t 0.005 -alpha_t 0.9412 -inner_num 2
+    -o route_log.out -e route_log.err ../00000004/vpr_base.gcc4-high-opt net.in arch.in place.in route.out -nodisp -route_only -route_chan_width 15 -pres_fac_mult 2 -acc_fac 1 -first_iter_pres_fac 4 -initial_pres_fac 8
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd
+comparing files in '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004'
+comparing 'costs.out' with cw='', abstol='', reltol='0.05',obiwan='',skiptol=''
+comparing 'place_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+comparing 'route_log.out' with cw='', abstol='', reltol='0.015',obiwan='',skiptol=''
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -E -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/175.vpr/run/00000004 -c 1 -e compare.err -o compare.out -f compare.cmd
+Benchmark Times:
+  Start:    Sun Mar 10 17:31:27 2019 (1552210287)
+  Stop:     Sun Mar 10 17:32:27 2019 (1552210347)
+  Elapsed:  00:01:00 (60)
+  Reported: 59 930873000 59.930873
+ Success 175.vpr ratio=2336.02, runtime=59.930873
+
+-----------------------------------
+  Running 176.gcc ref base gcc4-high-opt default
+Commands to run: 
+    -u /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/176.gcc/run/00000004
+    -o 166.out -e 166.err ../00000004/cc1_base.gcc4-high-opt 166.i -o 166.s
+    -o 200.out -e 200.err ../00000004/cc1_base.gcc4-high-opt 200.i -o 200.s
+    -o expr.out -e expr.err ../00000004/cc1_base.gcc4-high-opt expr.i -o expr.s
+    -o integrate.out -e integrate.err ../00000004/cc1_base.gcc4-high-opt integrate.i -o integrate.s
+    -o scilab.out -e scilab.err ../00000004/cc1_base.gcc4-high-opt scilab.i -o scilab.s
+Specinvoke: /data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/specinvoke -d /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/176.gcc/run/00000004 -e speccmds.err -o speccmds.out -f speccmds.cmd

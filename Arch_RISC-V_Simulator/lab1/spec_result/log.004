@@ -1,0 +1,328 @@
+
+
+
+runspec started at Sun Mar 10 16:41:42 2019
+/data3/wushibin/Lab1-1-处理器性能评测/SPEC/bin/runspec -c linux-amd64-gcc4.cfg -T all -n 3 int fp
+Identifying output formats...asc...config...html...pdf...ps...raw...
+Verbosity = 5
+Action    = validate
+Tune      = base,peak
+Ext       = gcc4-high-opt
+Size      = ref
+Machine   = default
+benchmarks= 164.gzip,175.vpr,176.gcc,181.mcf,186.crafty,197.parser,252.eon,253.perlbmk,254.gap,255.vortex,256.bzip2,300.twolf,168.wupwise,171.swim,172.mgrid,173.applu,177.mesa,178.galgel,179.art,183.equake,187.facerec,188.ammp,189.lucas,191.fma3d,200.sixtrack,301.apsi
+outputs   = raw,ASCII,HTML,config
+We will use: 164.gzip, 175.vpr, 176.gcc, 181.mcf, 186.crafty, 197.parser, 252.eon, 253.perlbmk, 254.gap, 255.vortex, 256.bzip2, 300.twolf, 168.wupwise, 171.swim, 172.mgrid, 173.applu, 177.mesa, 178.galgel, 179.art, 183.equake, 187.facerec, 188.ammp, 189.lucas, 191.fma3d, 200.sixtrack, 301.apsi
+Compiling Binaries
+  Up to date 164.gzip ref base gcc4-high-opt default
+  Up to date 175.vpr ref base gcc4-high-opt default
+  Up to date 176.gcc ref base gcc4-high-opt default
+  Up to date 181.mcf ref base gcc4-high-opt default
+  Up to date 186.crafty ref base gcc4-high-opt default
+  Up to date 197.parser ref base gcc4-high-opt default
+
+-----------------------------------
+  Building 252.eon ref base gcc4-high-opt default
+Wrote to makefile '/data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/252.eon/run/00000004/Makefile.spec':
+TUNE=base
+EXT=gcc4-high-opt
+
+BENCHLANG        = CXX
+BENCH_FLAGS      = -I. -DNDEBUG
+CC               = gcc
+COPTIMIZE        = -O3
+CXX              = g++
+CXXOPTIMIZE      = -O3
+CXXPORTABILITY   = -DHAS_ERRLIST -DSPEC_CPU2000_LP64
+F77              = gfortran
+FC               = gfortran
+OS               = unix
+USE_VPATH        = 0
+VENDOR           = 
+VPATH_CINCLUDE   = 
+VPATH_CXXINCLUDE = 
+VPATH_F90INCLUDE = 
+VPATH_FINCLUDE   = 
+VPATH_INCLUDE    = 
+abstol           = 0.005
+action           = validate
+backup_config    = 1
+baseexe          = eon
+basepeak         = 0
+benchdir         = benchspec
+benchmark        = 252.eon
+bindir           = exe
+changedmd5       = 0
+check_md5        = 1
+command_add_redirect = 0
+commanderrfile   = speccmds.err
+commandexe       = eon_base.gcc4-high-opt
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+company_name     = XYZ Inc.
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configpath       = /data3/wushibin/Lab1-1-处理器性能评测/SPEC/config/linux-amd64-gcc4.cfg
+datadir          = data
+deletebinaries   = 0
+deletework       = 0
+difflines        = 10
+dirprot          = 511
+endian           = 12345678
+env_vars         = 0
+exitvals         = spec_exit
+expand_notes     = 0
+ext              = gcc4-high-opt
+fast_rundir_verify = 0
+feedback         = 1
+fileprot         = 511
+help             = 0
+hw_avail         = May-2003
+hw_cpu           = AMD Opteron (TM) 150
+hw_cpu_mhz       = 2400
+hw_disk          = IDE, WD2000
+hw_fpu           = Integrated
+hw_memory        = 2 x 512 PC3200 DDR SDRAM CL2.0 (Corsair CMX512R-3200C2)
+hw_model         = Opteron (TM) 150 
+hw_ncpu          = 1
+hw_ncpuorder     = 1
+hw_ocache        = N/A
+hw_other         = None
+hw_parallel      = No
+hw_pcache        = 64KBI + 64KBD on chip
+hw_scache        = 1024KB(I+D) on chip
+hw_tcache        = N/A
+hw_vendor        = 
+ignore_errors    = 0
+ignore_sigint    = 0
+inputdir         = input
+iterations       = 3
+license_num      = 0000
+line_width       = 0
+locking          = 1
+log              = log
+log_line_width   = 0
+lognum           = 004
+mach             = default
+make             = specmake
+make_no_clobber  = 0
+makeflags        = 
+max_active_compares = 0
+max_users        = 1
+mean_anyway      = 0
+min_report_runs  = 3
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = eon
+nc               = 0
+notes0030        =   Portability:
+notes0051        =    252.eon:     CXXPORTABILITY=-DHAS_ERRLIST -DSPEC_CPU2000_LP64
+notes0080        =   Baseline C:   gcc -O3 
+notes0085        =   Baseline C++: g++ -O3
+num              = 252
+obiwan           = 
+os_exe_ext       = 
+output           = asc
+output_format    = asc,html,config
+outputdir        = output
+path             = /data3/wushibin/Lab1-1-处理器性能评测/SPEC/benchspec/CINT2000/252.eon
+prefix           = 
+rate             = 0
+rawfile          = 
+rawformat        = 0
+rebuild          = 0
+ref_tree_level   = Top level Config
+reftime          = reftime
+reltol           = 
+reportable       = 1
+resultdir        = result
+run              = all
+safe_eval        = 1
+setprocgroup     = 1
+sigint           = 2
+size             = ref
+skiptol          = 
+smarttune        = base
+specdiff         = specdiff
+specmake         = Makefile.spec
+specrun          = specinvoke
+srcalt           = 
+srcdir           = src
+subworkdir       = work
+sw_avail         = Dec-2003
+sw_compiler0000  = GNU gcc 4.0 compiler for AMD64
+sw_file          = Linux/ext3
+sw_os            = SuSE Linux 9.2 for AMD64
+sw_state         = Multi-user SuSE Run level 3
+table            = 1
+teeout           = yes
+teerunout        = yes
+test_date        = 
+tester_name      = XYZ Inc.
+top              = /data3/wushibin/Lab1-1-处理器性能评测/SPEC
+tune             = base
+uid              = 1022
+unbuffer         = 0
+use_submit_for_speed = 0
+username         = wushibin
+users            = 1
+vendor           = anon
+vendor_makefiles = 0
+verbose          = 5
+version          = 0
+workdir          = run
+worklist         = list
+  Compile for '252.eon' started at:Sun Mar 10 16:41:43 2019 (1552207303)
+Issuing make command 'specmake  clean 2> make.err | tee make.out'
+Start make command: Sun Mar 10 16:41:43 2019 (1552207303)
+Stop make command: Sun Mar 10 16:41:43 2019 (1552207303)
+Elapsed time for make command: 00:00:00 (0)
+Issuing make command 'specmake  build 2> make.err | tee make.out'
+Start make command: Sun Mar 10 16:41:43 2019 (1552207303)
+Stop make command: Sun Mar 10 16:42:14 2019 (1552207334)
+Elapsed time for make command: 00:00:31 (31)
+Output from make 'specmake  build 2> make.err | tee make.out':
+g++ -c -o ggCoverageSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggCoverageSolidTexture.cc
+g++ -c -o ggPathDielectricMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPathDielectricMaterial.cc
+g++ -c -o ggBox2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggBox2.cc
+g++ -c -o ggBox3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggBox3.cc
+g++ -c -o ggRasterSurfaceTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRasterSurfaceTexture.cc
+g++ -c -o ggJitterSample1.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggJitterSample1.cc
+g++ -c -o ggNRooksSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggNRooksSample2.cc
+g++ -c -o ggJitterSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggJitterSample2.cc
+g++ -c -o ggRGBFPixel.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRGBFPixel.cc
+g++ -c -o ggRotatingPinholeCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRotatingPinholeCamera.cc
+g++ -c -o ggRandomSample2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRandomSample2.cc
+g++ -c -o ggRandomSample3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRandomSample3.cc
+g++ -c -o ggSolidNoise2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSolidNoise2.cc
+g++ -c -o ggSolidNoise3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSolidNoise3.cc
+g++ -c -o ggSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSolidTexture.cc
+g++ -c -o ggOakSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggOakSolidTexture.cc
+g++ -c -o ggSpecularMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSpecularMaterial.cc
+g++ -c -o ggNA.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggNA.cc
+g++ -c -o ggMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggMaterial.cc
+g++ -c -o ggDiffuseMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggDiffuseMaterial.cc
+g++ -c -o ggDielectricMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggDielectricMaterial.cc
+g++ -c -o ggConductorMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggConductorMaterial.cc
+g++ -c -o ggEdgeDiscrepancy.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggEdgeDiscrepancy.cc
+g++ -c -o ggPolishedMaterial.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPolishedMaterial.cc
+g++ -c -o ggFrameInterpolation.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggFrameInterpolation.cc
+g++ -c -o ggQuaternion.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggQuaternion.cc
+g++ -c -o ggSpline.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSpline.cc
+g++ -c -o ggONB2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggONB2.cc
+g++ -c -o ggONB3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggONB3.cc
+g++ -c -o ggFrame2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggFrame2.cc
+g++ -c -o ggFrame3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggFrame3.cc
+g++ -c -o ggHMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHMatrix3.cc
+g++ -c -o ggSphere.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggSphere.cc
+g++ -c -o ggRGBE.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRGBE.cc
+g++ -c -o ggGamma.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggGamma.cc
+g++ -c -o ggBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggBRDF.cc
+g++ -c -o ggDiffuseBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggDiffuseBRDF.cc
+g++ -c -o ggPhongBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPhongBRDF.cc
+g++ -c -o ggPolishedBRDF.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPolishedBRDF.cc
+g++ -c -o ggCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggCamera.cc
+g++ -c -o ggPinholeCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPinholeCamera.cc
+g++ -c -o ggThinLensCamera.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggThinLensCamera.cc
+g++ -c -o ggErr.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggErr.cc
+g++ -c -o ggPixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPixelFilter.cc
+g++ -c -o ggTrianglePixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggTrianglePixelFilter.cc
+g++ -c -o ggBoxPixelFilter.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggBoxPixelFilter.cc
+g++ -c -o ggFormat.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggFormat.cc
+g++ -c -o ggGeometry.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggGeometry.cc
+g++ -c -o ggHAffineMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHAffineMatrix3.cc
+g++ -c -o ggHShearMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHShearMatrix3.cc
+g++ -c -o ggHBoxMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHBoxMatrix3.cc
+g++ -c -o ggHPerspectiveMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHPerspectiveMatrix3.cc
+g++ -c -o ggHTranslationMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHTranslationMatrix3.cc
+g++ -c -o ggHRigidBodyMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHRigidBodyMatrix3.cc
+g++ -c -o ggHRotationMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHRotationMatrix3.cc
+g++ -c -o ggHScaleMatrix3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHScaleMatrix3.cc
+g++ -c -o ggHPoint3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggHPoint3.cc
+g++ -c -o ggPoint2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPoint2.cc
+g++ -c -o ggPoint3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPoint3.cc
+g++ -c -o ggOptics.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggOptics.cc
+g++ -c -o ggPlane.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPlane.cc
+g++ -c -o ggPolygon.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggPolygon.cc
+g++ -c -o ggGrayPixel_x.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggGrayPixel_x.cc
+g++ -c -o ggRGBPixel_x.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRGBPixel_x.cc
+g++ -c -o ggRay2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRay2.cc
+g++ -c -o ggRay3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggRay3.cc
+g++ -c -o ggBoardFloorSolidTexture.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggBoardFloorSolidTexture.cc
+g++ -c -o ggVector2.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggVector2.cc
+g++ -c -o ggVector3.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggVector3.cc
+g++ -c -o ggString.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3  ggString.cc
+Error from make 'specmake  build 2> make.err | tee make.out':
+ggString.cc: In constructor 'ggString::ggString(int)':
+ggString.cc:46:30: error: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In constructor 'ggString::ggString(const char*)':
+ggString.cc:50:30: error: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In member function 'ggString& ggString::operator=(const char*)':
+ggString.cc:67:30: error: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+ggString.cc: In member function 'ggString& ggString::operator=(const ggString&)':
+ggString.cc:81:30: error: exception cleanup for this placement new selects non-placement operator delete [-fpermissive]
+     rep = new (l) StringRep(l);
+                              ^
+In file included from /usr/local/include/c++/7.2.0/bits/exception_ptr.h:40:0,
+                 from /usr/local/include/c++/7.2.0/exception:142,
+                 from /usr/local/include/c++/7.2.0/ios:39,
+                 from /usr/local/include/c++/7.2.0/ostream:38,
+                 from /usr/local/include/c++/7.2.0/iostream:39,
+                 from ./iostream.h:3,
+                 from ggString.cc:28:
+/usr/local/include/c++/7.2.0/new:129:6: note: 'void operator delete(void*, std::size_t)' is a usual (non-placement) deallocation function in C++14 (or with -fsized-deallocation)
+ void operator delete(void*, std::size_t) _GLIBCXX_USE_NOEXCEPT
+      ^~~~~~~~
+specmake: *** [ggString.o] Error 1
+Issuing options command 'specmake  options 2> options.err | tee options.out'
+Start options command: Sun Mar 10 16:42:14 2019 (1552207334)
+Stop options command: Sun Mar 10 16:42:14 2019 (1552207334)
+Elapsed time for options command: 00:00:00 (0)
+Output from options 'specmake  options 2> options.err | tee options.out':
+COMP: g++ -c -o options.o    -DHAS_ERRLIST -DSPEC_CPU2000_LP64   -I. -DNDEBUG       -O3 
+LINK: g++       -O3       -o options
+  Compile for '252.eon' ended at:Sun Mar 10 16:42:14 2019 (1552207334)
+  Elapsed compile for '252.eon': 00:00:31 (31)
+  Some files did not appear to be built: eon
+*** Error building 252.eon
+If you wish to ignore this error, please use '-I' or ignore errors.
